@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JQUERY FV</title>
+  <link rel="icon" href="./pic/image.png">
+  <link rel="stylesheet" href="./style.css">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JQUERY CDN -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- For DATETIMEPICKER -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/0e0f65d16f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- <img src="/images/image.png" alt=""> -->
+  <div class="form-cont">
+    <h2 class="head ">Registration Form</h2>
+    <form id="form">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div>
+              <label for="fname">FistName:</label><br>
+              <input type="text" id="fname" name="firstname">
+              <p class=" alertRed  alert-None" id="alert-fname">Please Enter Your firstName!!</p>
+              <p class=" alertRed  alert-None" id="alert-fname2">Please Enter Valid firstName!!</p>
+            </div>
+            <div>
+              <label for="lname">LastName:</label><br>
+              <input type="text" id="lname" name="LastName"><br>
+              <p class=" alertRed alert-None" id="alert-lname">Please Enter Your lastName</p>
+            </div>
+            <div>
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <p class=" alertRed alert-None" id="alert-email">Please Enter Your email</p>
+              <p class=" alertRed alert-None" id="alert-email1">Please Enter Valid email</p>
+            </div>
+            <div>
+              <label for="MobileNo">Mobile Number:</label><br>
+              <input type="tel" id="MobileNo" name="Mobile Number"><br>
+              <p class="alertRed alert-None" id="alert-MobileNo">Please Enter MobileNO</p>
+            </div>
+            <div>
+              <label for="Age">Age:</label><br>
+              <input type="number" id="Age" name="Age"><br>
+              <p class=" alertRed alert-None" id="alert-Age">Please Enter Age</p>
+            </div>
+            <div>
+            <div class=""> Address:<br>
+                <textarea id="Addre" type="text"></textarea><br>
+                <p class=" alertRed alert-None" id="alert-Address">Please Enter Address</p>
+            </div>
+            Are You Willing to Locate:<br>
+            <div id="Locate">
+              <input type="radio" id="Yes" name="Locate" >
+              <label for="Yes">Yes</label><br>
+              <input type="radio" id="No" name="Locate"  >
+              <label for="No">No</label><br>
+              <p class=" alertRed alert-None" id="alert-Locate">Please choose one</p>
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <label for="fname">DOB</label><br>
+              <input type="text" id="datetimepicker" name="Date">
+              <p class=" alertRed  alert-None" id="alert-Date">Please Enter DoB</p>
+              <p class=" alertRed  alert-None" id="alert-Date1">Your DoB must be in year 1999 to 2005</p>
+            </div><br>
+            Gender:<br>
+            <div id="gender">
+              <input type="radio" id="male" name="gender" >
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" >
+              <label for="female">Female</label><br>
+              <p class=" alertRed alert-None" id="alert-Gender">Please give Gender</p>
+            </div>
+            Skills:<br>
+            <div id="Skills">
+              <input type="checkbox" id="c" name="Skills" value="c">
+              <label for="c">c</label><br>
+              <input type="checkbox" id="c++" name="Skills" value="c++">
+              <label for="c++">c++</label><br>
+              <input type="checkbox" id="Javascript" name="Skills" value="Javascript">
+              <label for="Javascript">Javascript</label><br>
+              <p class=" alertRed alert-None" id="alert-Skills">Please give Skills</p>
+            </div><br>
+            <div>
+              <label for="Qualification">Qualification&nbsp;:&nbsp;</label>
+              <select id="Qualification" name="Qualification">
+                <option value="">Select&nbsp;&nbsp;</option>
+                <option value="Bsc">Bsc</option>
+                <option value="B.E">B.E</option>
+                <option value="Msc">Msc</option>
+              </select>
+              <p class=" alertRed alert-None" id="alert-Qual">Please give Qualification</p>
+            </div><br>
+            <div>
+              <div>
+                <label for="ProfilePic">Profile Pic:</label><br>
+                <input type="file" id="ProfilePic" name="Profile"><br>
+                <p class="alertRed  alert-None" id="alert-Profile">Please Upload Profile</p>
+              </div>
+              <div id="dropFiles" class="dropFiles bor">
+                <h5 class="toremove">Drag and drop File Here.</h5>
+                <div id="Prof"></div>
+              </div>
+              <p id="messages">
+              </p>
+            </div><br>
+          </div>
+        </div>
+        <div class="agree">
+          <input id="Agreebox" name="agree" type="checkbox">
+          <p style="display: inline-block;" id="alert-Agree">I Agree the terms and Conditon</p>
+        </div>
+      </div>
+      <div class="Register ">
+        <button type="submit" class="sub">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+/* img{
+  filter: saturate(7); 
+  filter: brightness(250%); 
+  filter: contrast(180%); 
+  filter: grayscale(100%); 
+  filter: hue-rotate(180deg); 
+  filter: invert(100%); 
+  filter: opacity(50%); 
+  filter: sepia(100%); 
+  filter: drop-shadow(8px 8px 10px green); 
+}  */
+
+body{
+   
+    background: url('./pic/2.webp') no-repeat  bottom right;
+    filter: drop-shadow(8px 8px 10px rgba(228, 253, 8, 0.219));
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white!important; */
+   
+}
+.form-cont {
+    margin: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 120px /100px 10px;
+    box-shadow: 10px 8px 1px rgba(0, 0, 0, 0.3);
+    
+}
+
+.head {
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+}
+
+.form {
+    padding: 10px 40px;
+}
+
+input {
+    margin-bottom: 2px !important;
+}
+
+.gender {
+    padding-left: 20px;
+}
+
+.gender input {
+    width: 10%;color: white;
+}
+
+.gender label {
+    width: 40%;
+}
+
+.interest input {
+    width: 20%;
+}
+
+.interest label {
+    width: 40%;
+}
+
+.address {
+    height: 80px;
+}
+
+.agree {
+    text-align: center;
+}
+
+.Register {
+    text-align: center;
+}
+
+.Register input {
+    /* background: url('/images/down.jpeg') no-repeat; */
+    text-align: center;
+    border-style: none;
+    padding: 10px;
+    border-radius: 120px /100px 10px;
+   
+}
+.sub{
+    border-style: none;
+    color: rgb(15, 15, 15);
+    padding: 10px 20px;
+}   
+
+#Prof {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+#Prof img{
+    height: 100px;
+    width: 100px;
+  }
+ .bt{
+    background-color: aliceblue;
+    color: #ff0000;
+    border: none;
+    font-size: small;
+ }
+ .rr{
+    position: absolute;
+    top:2px;
+    left:104px;
+    z-index: 1;
+ }
+ .dropFiles {
+    width: 100px;
+    min-height: 100px; 
+    height: 100px; 
+    text-align: center;
+    font-size: 10px;
+  }
+  .bor{
+    border: 1px rgb(8, 8, 8) solid; 
+  }
+  .highlightDropArea {
+    border: 5px green dashed;
+  }
+  
+@media only screen and (max-width:700px) {
+      
+    body,
+    .form-cont {
+        height: auto;
+    }
+}
+@media only screen and (max-width:825px){
+    .form-cont{
+        width: 320px;
+    }
+}
+/* FOR JQUERY */
+
+.alertRed { 
+    color: red;
+  }
+.alert-None {
+    display: none;
+  } 
+  .bt{
+    background-color: aliceblue;
+    color: #ff0000;
+    border: none;
+ }
+ .rr{
+    position: absolute;
+    top:2px;
+    left:104px;
+    z-index: 1;
+ }
